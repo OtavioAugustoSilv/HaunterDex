@@ -2,31 +2,39 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Contato</title>
+  <title>Haunter Dex - Contato</title>
+  <link rel="stylesheet" href="css/haunterDex_base.css">
+  <link rel="stylesheet" href="css/contato.css">
 </head>
 <body>
-  <!-- Navbar no topo -->
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="pokedex.html">Tabela</a> |
-    <strong>Contato</strong> |
-    <a href="equipe.html">Equipe</a>
-  </nav>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pokedex.html">Tabela</a></li>
+        <li><strong>Contato</strong></li>
+        <li><a href="equipe.html">Equipe</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <h1>Entre em Contato</h1>
-  <form method="get">
-    <label for="nome">Nome:</label><br>
-    <input type="text" id="nome" name="nome"><br><br>
+  <main>
+    <h1>Entre em Contato</h1>
+    <form method="get">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
 
-    <label for="email">E-mail:</label><br>
-    <input type="email" id="email" name="email"><br><br>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
 
-    <label for="assunto">Assunto:</label><br>
-    <input type="text" id="assunto" name="assunto"><br><br>
+      <label for="assunto">Assunto:</label>
+      <input type="text" id="assunto" name="assunto" required>
 
-    <label for="mensagem">Mensagem:</label><br>
-    <textarea id="mensagem" name="mensagem" rows="5" cols="30"></textarea><br><br>
-    <button>Enviar</button>
-  </form>
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
 </body>
 </html>

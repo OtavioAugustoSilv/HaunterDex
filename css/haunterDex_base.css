@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #2a003f, #0a0015 80%);
+  color: #e4d9ff;
+  min-height: 100vh;
+  padding: 20px;
+  text-shadow: 0 0 6px #3d0072;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Navbar */
+header {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+nav {
+  background: rgba(50, 0, 80, 0.8);
+  padding: 15px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px #b24cff;
+}
+
+/* Lista de links da navbar */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Centraliza */
+  align-items: center;
+  gap: 150px; /* Espaço entre os itens */
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Links da navbar */
+nav a, nav strong {
+  color: #d0a6ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #b24cff, 0 0 20px #8f00ff;
+}
+
+nav strong {
+  color: #fff;
+  text-shadow: 0 0 10px #b24cff;
+}
+
+/* Responsividade da navbar */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+/* Cabeçalhos */
+h1 {
+  text-align: center;
+  font-size: 2.2em;
+  color: #fff;
+  margin-bottom: 15px;
+  text-shadow: 0 0 10px #a000ff, 0 0 20px #6a00b5;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  nav {
+    font-size: 0.9em;
+  }
+}

@@ -2,55 +2,66 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Tabela de Pokémons</title>
+  <title>Haunter Dex - Tabela</title>
+  <link rel="stylesheet" href="css/haunterDex_base.css">
+  <link rel="stylesheet" href="css/pokedex.css">
 </head>
 <body>
-  <!-- Navbar no topo -->
-  <nav>
-    <a href="index.html">Home</a> |
-    <strong>Tabela</strong> |
-    <a href="contato.html">Contato</a> |
-    <a href="equipe.html">Equipe</a>
-  </nav>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><strong>Tabela</strong></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="equipe.html">Equipe</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <h1>Tabela de Pokémons</h1>
-  <table border="1">
-    <tr>
-      <th>Imagem</th>
-      <th>Nome</th>
-      <th>Tipo</th>
-      <th>Número</th>
-    </tr>
-    <tr>
-      <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" width="80"></td>
-      <td>Bulbasaur</td>
-      <td>Planta / Veneno</td>
-      <td>#001</td>
-    </tr>
-    <tr>
-      <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" width="80"></td>
-      <td>Charmander</td>
-      <td>Fogo</td>
-      <td>#004</td>
-    </tr>
-    <tr>
-      <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" width="80"></td>
-      <td>Squirtle</td>
-      <td>Água</td>
-      <td>#007</td>
-    </tr>
-    <tr>
-      <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" width="80"></td>
-      <td>Pikachu</td>
-      <td>Elétrico</td>
-      <td>#025</td>
-    </tr>
-    <tr>
-      <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png" width="80"></td>
-      <td>Jigglypuff</td>
-      <td>Normal / Fada</td>
-      <td>#039</td>
-    </tr>
-  </table>
+  <main>
+    <h1>Tabela de Pokémons</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Imagem</th>
+          <th>Nome</th>
+          <th>Tipo</th>
+          <th>Número</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur" width="80"></td>
+          <td>Bulbasaur</td>
+          <td>Planta / Veneno</td>
+          <td>#001</td>
+        </tr>
+        <tr>
+          <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="Charmander" width="80"></td>
+          <td>Charmander</td>
+          <td>Fogo</td>
+          <td>#004</td>
+        </tr>
+        <tr>
+          <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" alt="Squirtle" width="80"></td>
+          <td>Squirtle</td>
+          <td>Água</td>
+          <td>#007</td>
+        </tr>
+        <tr>
+          <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pikachu" width="80"></td>
+          <td>Pikachu</td>
+          <td>Elétrico</td>
+          <td>#025</td>
+        </tr>
+        <tr>
+          <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png" alt="Jigglypuff" width="80"></td>
+          <td>Jigglypuff</td>
+          <td>Normal / Fada</td>
+          <td>#039</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
 </body>
 </html>
