@@ -54,9 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="css/haunterDex_base.css" />
     <link rel="stylesheet" href="css/contato.css" />
     <link rel="stylesheet" href="css/switch.css" />
-    <script src="js/validacao.js"></script>
-    <script src="js/themeToggle.js"></script>
-    <script src="js/theme.js"></script>
+
 </head>
 <body>
 <header>
@@ -108,3 +106,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </main>
 </body>
 </html>
+    <script src="js/validacao.js"></script>
+    <script src="js/themeToggle.js"></script>
+    <script src="js/theme.js"></script>
