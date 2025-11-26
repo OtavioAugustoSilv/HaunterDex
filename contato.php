@@ -44,6 +44,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <link rel="stylesheet" href="css/contato.css" />
   <link rel="stylesheet" href="css/switch.css" />
   <link rel="stylesheet" href="css/popup.css">
+   <script src="js/themeToggle.js"></script>
+  <script src="js/theme.js"></script>
 </head>
 <body>
 <header>
@@ -105,5 +107,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </html>
 <script src="js/popup.js"></script>
   <script src="js/validacao.js"></script>
-  <script src="js/themeToggle.js"></script>
-  <script src="js/theme.js"></script>
+ 

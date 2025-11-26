@@ -46,7 +46,8 @@ function mascaraCPF($cpf) {
     <link rel="stylesheet" href="css/switch.css" />
     <link rel="stylesheet" href="css/haunterDex_base.css" />
     <link rel="stylesheet" href="css/popup.css">
-
+    <script src="js/themeToggle.js"></script>
+    <script src="js/theme.js"></script>
     <style>
 
     </style>
@@ -125,5 +126,3 @@ function mascaraCPF($cpf) {
 </body>
 </html>
 <script src="js/popup.js"></script>
-    <script src="js/themeToggle.js"></script>
-    <script src="js/theme.js"></script>
