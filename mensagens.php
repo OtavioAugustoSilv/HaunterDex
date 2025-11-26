@@ -29,6 +29,12 @@ if (isset($_GET['status'])) {
             break;
     }
 }
+
+function mascaraCPF($cpf) {
+    $cpf = preg_replace('/\D/', '', $cpf);
+    return preg_replace('/(\d{3})(\d{3})(\d{3})(\d{2})/', '$1.$2.$3-$4', $cpf);
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -90,7 +96,7 @@ if (isset($_GET['status'])) {
                         <td data-label="ID"><?= $m['id'] ?></td>
                         <td data-label="Nome"><?= htmlspecialchars($m['nome']) ?></td>
                         <td data-label="Email"><?= htmlspecialchars($m['email']) ?></td>
-                        <td data-label="CPF"><?= htmlspecialchars($m['cpf']) ?></td>
+                        <td data-label="CPF"><?= mascaraCPF($m['cpf']) ?></td>
                         <td data-label="Assunto"><?= htmlspecialchars($m['assunto']) ?></td>
                         <td data-label="Mensagem"><?= htmlspecialchars($m['mensagem']) ?></td>
                         <td data-label="Data"><?= date('d/m/Y H:i', strtotime($m['data_envio'])) ?></td>
