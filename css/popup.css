@@ -1,0 +1,25 @@
+#popup-container {
+  display: none;
+  position: fixed;
+  top: 90px;
+  right: 20px;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#popup-container.show {
+  display: block;
+  opacity: 1;
+}
+#popup-container.sucesso {
+    background-color: #4CAF50; /* verde */
+}
+
+#popup-container.erro {
+    background-color: #f44336; /* vermelho */
+}

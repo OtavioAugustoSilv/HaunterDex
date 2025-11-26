@@ -1,0 +1,121 @@
+/* Loader */
+#loader {
+  text-align: center;
+  color: #d0a6ff;
+  margin-top: 20px;
+}
+
+/* Tabela */
+table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px #5a00a5;
+  table-layout: fixed; /* impede colunas de mudar de tamanho */
+}
+
+/* Cabeçalho e células */
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  vertical-align: middle; /* centraliza verticalmente */
+}
+
+th {
+  background: rgba(100, 0, 150, 0.8);
+  color: #fff;
+  text-shadow: 0 0 8px #d88cff;
+}
+a {
+  color: #d0a6ff;
+}
+td {
+  background: rgba(40, 0, 70, 0.5);
+  min-height: 100px; /* evita pulsar */
+}
+
+/* Linha ao passar o mouse */
+tr:hover td {
+  background: rgba(120, 0, 200, 0.3);
+  transition: 0.3s;
+}
+
+/* Colunas com largura fixa */
+td:nth-child(1) {
+  width: 100px;
+} /* Imagem */
+td:nth-child(2) {
+  width: 200px;
+} /* Nome */
+td:nth-child(3) {
+  width: 150px;
+} /* Tipo */
+td:nth-child(4) {
+  width: 80px;
+} /* Número */
+
+/* Imagens Pokémon na tabela */
+td img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Tipos */
+.type {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin: 2px;
+}
+
+.pokemon-table td a {
+  color: #d0a6ff;
+}
+
+/* Linha evolutiva */
+#pokemon-evolution {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#pokemon-evolution div {
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#pokemon-evolution img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.evolution-name {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.evolution-arrow {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: #ccc;
+  margin: 0 5px;
+}

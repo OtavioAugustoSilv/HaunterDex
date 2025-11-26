@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Haunter Dex - Detalhes</title>
+    <link rel="stylesheet" href="css/haunterDex_base.css" />
+    <link rel="stylesheet" href="css/detalhes.css" />
+    <link rel="stylesheet" href="css/switch.css" />
+    <script src="js/themeToggle.js"></script>
+    <script src="js/theme.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pokedex.html">Tabela</a></li>
+          <li><a href="contato.php">Contato</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+          <li><a href="mensagens.php">Mensagens</a></li>
+          <label class="switch">
+            <input type="checkbox" id="theme-toggle" checked/>
+            <span class="slider"></span>
+            <span class="clouds_stars"></span>
+          </label>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 id="pokemon-name"></h1>
+
+      <div id="pokemon-info">
+        <div class="pokemon-header">
+          <img id="pokemon-img" src="" alt="Imagem do Pokémon" />
+          <div class="pokemon-basic">
+            <p id="pokemon-id"></p>
+            <p id="pokemon-height"></p>
+            <p id="pokemon-weight"></p>
+            <p id="pokemon-species"></p>
+          </div>
+        </div>
+
+        <div class="pokemon-types" id="pokemon-types"></div>
+        <div class="pokemon-abilities" id="pokemon-abilities"></div>
+
+        <h3>Estatísticas</h3>
+        <table id="pokemon-stats"></table>
+
+        <h3>Movimentos</h3>
+        <table id="pokemon-moves"></table>
+      </div>
+
+      <h2>Linha Evolutiva</h2>
+      <div id="pokemon-evolution"></div>
+    </main>
+
+    <script src="js/detalhes.js"></script>
+  </body>
+</html>

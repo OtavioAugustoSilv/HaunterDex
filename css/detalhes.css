@@ -1,0 +1,264 @@
+
+main {
+  text-align: center;
+  padding: 20px;
+}
+
+#pokemon-info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(40, 0, 70, 0.6);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #b24cff;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pokemon-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+.pokemon-header img {
+  width: 150px;
+  border-radius: 10px;
+  margin-top: -45px;
+}
+
+.pokemon-basic p {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.pokemon-types {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.type {
+  padding: 5px 12px;
+  border-radius: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.pokemon-abilities {
+  margin-top: 10px;
+}
+
+table {
+  width: 90%;
+  margin: 10px auto;
+  border-collapse: collapse;
+}
+table,
+th,
+td {
+  border: 1px solid #fff;
+}
+th,
+td {
+  padding: 5px;
+  text-align: left;
+}
+th {
+  background: #4b0073;
+}
+
+.evolution-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+.evolution-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  min-width: 80px;
+}
+.evolution-item img {
+  width: 80px;
+  margin-bottom: 5px;
+}
+
+/* Tipo colors */
+.type-fire {
+  background: #f08030;
+}
+.type-water {
+  background: #6890f0;
+}
+.type-grass {
+  background: #78c850;
+}
+.type-electric {
+  background: #f8d030;
+}
+.type-ice {
+  background: #98d8d8;
+}
+.type-fighting {
+  background: #c03028;
+}
+.type-poison {
+  background: #a040a0;
+}
+.type-ground {
+  background: #e0c068;
+}
+.type-flying {
+  background: #a890f0;
+}
+.type-psychic {
+  background: #f85888;
+}
+.type-bug {
+  background: #a8b820;
+}
+.type-rock {
+  background: #b8a038;
+}
+.type-ghost {
+  background: #705898;
+}
+.type-dragon {
+  background: #7038f8;
+}
+.type-dark {
+  background: #705848;
+}
+.type-steel {
+  background: #b8b8d0;
+}
+.type-fairy {
+  background: #ee99ac;
+}
+.type-normal {
+  background: #a8a878;
+}
+
+h2 {
+  margin-top: 40px;
+}
+#pokemon-evolution {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(40, 0, 70, 0.6);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #b24cff;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Nome do Pokémon */
+.evolution-name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  margin-top: 5px;
+}
+
+/* Setas entre os Pokémon */
+.evolution-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza horizontalmente */
+  justify-content: center; /* centraliza verticalmente */
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  min-width: 50px;
+  height: 80px; /* altura igual à das imagens, para centralizar */
+  position: relative;
+}
+
+/* seta visual maior e estilizada */
+.evolution-arrow::before {
+  content: "➤"; /* seta Pokedex style */
+  font-size: 24px;
+  color: #ff88ff;
+  text-shadow: 0 0 5px #b24cff;
+}
+.evolution-arrow img {
+  position: absolute; /* tira do fluxo do flex */
+  bottom: -10px; /* fica no final do container */
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+/* Ajustes exclusivos para o modo claro da página de detalhes */
+body.detalhes.light {
+  background: radial-gradient(circle at top, #d5c5f7, #bba2ff 80%);
+  color: #2e004f;
+}
+
+/* Cards e seções de informações */
+body.detalhes.light #pokemon-info,
+body.detalhes.light #pokemon-evolution {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(155, 93, 229, 0.3);
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(155, 93, 229, 0.25);
+}
+
+/* Tabelas */
+body.detalhes.light table {
+  background: #f9f6ff;
+  border: 1px solid #d1b8ff;
+  box-shadow: 0 0 8px rgba(155, 93, 229, 0.2);
+}
+
+body.detalhes.light th,
+body.detalhes.light td {
+  color: #3f2b5a;
+  border: 1px solid #d1b8ff;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+/* Cabeçalhos e textos */
+body.detalhes.light h1,
+body.detalhes.light h2,
+body.detalhes.light h3 {
+  color: #3f2b5a;
+  text-shadow: 0 0 6px rgba(155, 93, 229, 0.4);
+}
+
+body.detalhes.light p {
+  color: #4a326b;
+}
+
+/* Imagem */
+body.detalhes.light #pokemon-img {
+  filter: drop-shadow(0 0 8px rgba(155, 93, 229, 0.4));
+}
+
+/* Links internos */
+body.detalhes.light a {
+  color: #5b2db0;
+}
+
+body.light p, #pokemon-name, th, .type{
+  color: white !important;
+}
+body.detalhes.light a:hover {
+  color: #8c4cff;
+  text-shadow: 0 0 8px #caa8ff;
+}
+body.detalhes.light p,h2,h3, .pokemon-abilities{
+  color: white;
+}

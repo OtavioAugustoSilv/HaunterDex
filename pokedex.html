@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Haunter Dex - Tabela</title>
+    <link rel="stylesheet" href="css/haunterDex_base.css" />
+    <link rel="stylesheet" href="css/pokedex.css" />
+    <link rel="stylesheet" href="css/switch.css" />
+    <script src="js/themeToggle.js"></script>
+    <script src="js/theme.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><strong>Tabela</strong></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+          <li><a href="mensagens.php">Mensagens</a></li>
+          <label class="switch">
+            <input type="checkbox" id="theme-toggle" checked />
+            <span class="slider"></span>
+            <span class="clouds_stars"></span>
+          </label>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Tabela de Pokémons</h1>
+
+      <div id="loader">Carregando Pokémons...</div>
+
+      <table id="pokemon-table">
+        <thead>
+          <tr>
+            <th>Imagem</th>
+            <th>Nome</th>
+            <th>Tipo</th>
+            <th>Número</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Conteúdo gerado dinamicamente -->
+        </tbody>
+      </table>
+    </main>
+
+    <script src="js/carrega_dados.js"></script>
+  </body>
+</html>
